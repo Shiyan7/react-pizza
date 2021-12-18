@@ -1,0 +1,149 @@
+@media (max-width: 1340px) {
+    .toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        &__item {
+            width: 100%;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .products__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .products__list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    .wrapper {
+        padding: 30px 15px;
+    }
+
+    .header {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+
+        &__image {
+            margin-right: 10px;
+            width: 28px;
+            height: 28px;
+        }
+
+        &__title {
+            font-size: 21px;
+        }
+
+        &__desc {
+            display: none;
+        }
+    }
+    
+    .cart {
+        padding: 8px 13px;
+        font-size: 14px;
+        
+        &__icon {
+            width: 14px;
+            height: 14px;
+        }
+
+        &__value {
+            margin-right: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .toolbar {
+        margin-bottom: 30px;
+    }
+
+    .filters {
+        margin-bottom: 10px;
+        &__btn {
+            padding: 10px 23px;
+        }
+    }
+
+    .g-title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .products {
+        &__list {
+            row-gap: 25 px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .product {
+        padding-bottom: 30px;
+        border-bottom: 0.1px solid rgba(#000, 0.1);
+        &__title {
+            font-size: 18px;
+        }
+        &__image {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    .wrapper {
+        padding: 20px 15px;
+    }
+
+    .header {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+
+        &__image {
+            width: 25px;
+            height: 25px;
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+    }
+
+    .cart {
+        &__value {
+            margin-right: 10px;
+            padding-right: 10px;
+        }
+    }
+}

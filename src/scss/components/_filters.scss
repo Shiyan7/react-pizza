@@ -1,0 +1,35 @@
+.filters {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__btn {
+        padding: 14px 35px;
+        background-color: #f9f9f9;
+        border-radius: 30px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #2c2c2c;
+        -webkit-transition: color 0.3s, background-color 0.3s;
+        -moz-transition: color 0.3s, background-color 0.3s;
+        -ms-transition: color 0.3s, background-color 0.3s;
+        -o-transition: color 0.3s, background-color 0.3s;
+        transition: color 0.3s, background-color 0.3s;
+        &:not(.filters__btn--active) {
+            &:hover,
+            &:focus {
+                background-color: #f1f1f1;
+            }
+        }
+        &--active {
+            color: #fff;
+            background-color: #282828;
+            pointer-events: none;
+        }
+    }
+}
